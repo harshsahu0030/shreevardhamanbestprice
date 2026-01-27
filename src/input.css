@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+@theme {
+  --color-darkblue: #050a30;
+  --color-lighttext: #ffffff;
+  --color-darktext: #000000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: manrope;
+  src: url("../fonts//Manrope-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: poppins;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@theme {
+  --color-darkblue: #050a30;
+  --color-lighttext: #ffffff;
+  --color-darktext: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn-dark {
+  height: 100%;
+  background-color: var(--color-lighttext);
+  color: var(--color-darktext);
+  padding: 0 48px;
+  border-radius: 100px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.btn-dark:hover {
+  background-color: var(--color-darktext);
+  color: var(--color-lighttext);
+  transition: ease-in-out 0.2s;
+  border: 2px solid var(--color-lighttext);
+}
+
+/* Scroll allowed, scrollbar hidden */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}

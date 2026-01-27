@@ -1,0 +1,22 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+!.gitkeep
+
+# Tailwind config (not needed on production server)
+tailwind.config.js
+postcss.config.js
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
