@@ -8,16 +8,19 @@
     <link rel="stylesheet" href="/src/output.css" />
   </head>
   <body>
+    <!-- header  -->
     <header
       class="h-20 w-full flex items-center justify-between py-1 xl:px-15 px-2 text-white fixed top-0 left-0 z-99 backdrop-blur-sm"
     >
-      <img
-        src="./assets/logo.webp"
-        alt="logo"
-        height="100"
-        width="100"
-        class="h-full object-contain"
-      />
+      <a href="/" class="hover:scale-95 transition-all">
+        <img
+          src="./assets/logo.webp"
+          alt="logo"
+          height="100"
+          width="100"
+          class="h-full object-contain"
+        />
+      </a>
       <button
         class="nav-open text-base font-semibold py-1 px-4 rounded-full cursor-pointer hover:scale-95 transition-all border flex items-center gap-2"
       >
@@ -29,10 +32,10 @@
     <!-- navbar  -->
     <nav
       id="website-navbar"
-      class="h-screen w-full fixed top-0 left-0 bg-gray-900 z-999 text-white overflow-y-auto scrollbar-hide px-2"
+      class="h-screen w-full fixed top-0 left-0 bg-darkblue z-999 text-white overflow-y-auto scrollbar-hide px-2"
     >
       <button
-        class="nav-close fixed top-5 right-2 xl:right-15 text-base font-semibold py-1 px-4 rounded-full border-1 cursor-pointer hover:scale-95 transition-all flex items-center gap-2"
+        class="nav-close fixed top-5 right-2 xl:right-15 text-base font-semibold py-1 px-4 rounded-full border cursor-pointer hover:scale-95 transition-all flex items-center gap-2"
       >
         <span class="text-gray-400"> Close </span>
         <i class="fa-solid fa-xmark"></i>
@@ -46,10 +49,17 @@
             loop
             autoplay
             preload="none"
+            height="100"
+            width="100"
           >
-            <source src="./assets/banner.mp4" type="video/mp4" />
+            <source
+              src="./assets/banner3.mp4"
+              type="video/mp4"
+              height="100"
+              width="100"
+            />
           </video>
-          <div class="absolute h-full w-full bg-gray-900/50 top-0 left-0"></div>
+          <div class="absolute h-full w-full bg-darktext/50 top-0 left-0"></div>
         </div>
 
         <div class="navbar-content w-full flex flex-col gap-10 justify-between">
@@ -94,6 +104,36 @@
 
           <hr class="border border-gray-500" />
 
+          <ul class="flex items-center gap-4 text-3xl">
+            <li class="hover:scale-95 transition-all relative group">
+              <a href="/" target="_blank">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+              <span
+                class="text-sm absolute -top-10 left-[50%] translate-x-[-50%] bg-blue-z-555 bg-darktext/50 p-2 rounded-lg invisible xl:group-hover:visible transition-all"
+                >Facebook</span
+              >
+            </li>
+            <li class="hover:scale-95 transition-all relative group">
+              <a href="/" target="_blank">
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+              <span
+                class="text-sm absolute -top-10 left-[50%] translate-x-[-50%] bg-blue-z-555 bg-darktext/50 p-2 rounded-lg invisible xl:group-hover:visible transition-all"
+                >Instagram</span
+              >
+            </li>
+            <li class="hover:scale-95 transition-all relative group">
+              <a href="/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <span
+                class="text-sm absolute -top-10 left-[50%] translate-x-[-50%] bg-blue-z-555 bg-darktext/50 p-2 rounded-lg invisible xl:group-hover:visible transition-all"
+                >LinkedIn</span
+              >
+            </li>
+          </ul>
+
           <div
             class="navbar-info grid grid-cols-1 xl:grid-cols-2 gap-10 text-lg pb-20 xl:pb-0"
           >
@@ -128,7 +168,333 @@
       </div>
     </nav>
 
-    <main class="min-h-screen w-full bg-amber-950"></main>
+    <!-- main  -->
+    <main class="min-h-screen w-full">
+      <!-- hero-banner  -->
+      <section
+        aria-label="hero-section"
+        id="hero-banner"
+        class="h-[90vh] relative w-full"
+      >
+        <video
+          class="h-full w-full object-cover rounded-lg"
+          muted
+          loop
+          autoplay
+          preload="none"
+        >
+          <source src="./assets/banner.mp4" type="video/mp4" />
+        </video>
+        <div
+          class="absolute h-full w-full bg-darktext/50 top-0 left-0 z-10"
+        ></div>
+
+        <div class="absolute bottom-10 xl:left-15 left-2 z-20">
+          <h1
+            class="text-3xl md:text-6xl xl:text-8xl font-bold uppercase text-lighttext"
+          >
+            ShreeVardhaman<br class="hidden md:block" />
+            BestPrice
+          </h1>
+        </div>
+
+        <div class="absolute top-30 text-center xl:right-15 right-2 z-20">
+          <h2
+            class="text-xl md:text-2xl xl:text-4xl font-bold uppercase text-lighttext"
+          >
+            Since<br />
+            1860
+          </h2>
+        </div>
+      </section>
+
+      <!-- marque effect companies  -->
+      <section aria-label="companies" class="h-40 w-full overflow-hidden">
+        <div class="marquee-companies h-full w-full flex items-center"></div>
+      </section>
+
+      <!-- about us  -->
+      <section
+        aria-label="about-us"
+        class="h-full w-full px-2 xl:px-15 py-20 flex flex-col gap-5"
+      >
+        <!-- about - 1  -->
+        <div class="w-full grid grid-cols-1 md:grid-cols-12 gap-5">
+          <div class="md:col-span-8">
+            <h2 class="text-3xl lg:text-6xl font-bold uppercase">
+              one stop shop for <br />
+              every needs
+            </h2>
+          </div>
+          <div class="md:col-span-4 text-base lg:text-xl">
+            Our commitment to excellence ensures that every decision is guided
+            by trust, value, and long-term customer satisfaction.
+          </div>
+        </div>
+
+        <!-- about -2  -->
+        <div class="h-full w-full grid grid-cols-1 md:grid-cols-12 gap-5">
+          <div class="md:col-span-4 text-base lg:text-xl">
+            <div class="h-full grid grid-cols-1 grid-rows-3 gap-5">
+              <div
+                class="w-full p-4 bg-darkblue text-lighttext rounded-lg text-2xl font-semibold flex gap-2"
+              >
+                <span> 1.</span>
+                <span> Quality products at best prices </span>
+              </div>
+              <div
+                class="w-full p-4 bg-darkblue text-lighttext rounded-lg text-2xl font-semibold flex gap-2"
+              >
+                <span> 2.</span>
+                <span>Ensure reliable everyday shopping</span>
+              </div>
+              <div
+                class="w-full p-4 bg-darkblue text-lighttext rounded-lg text-2xl font-semibold flex gap-2"
+              >
+                <span> 3.</span>
+                <span> Build long-term customer trust </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="h-full md:col-span-8 grid gap-5 md:grid-cols-2 rounded-lg overflow-hidden"
+          >
+            <div class="relative h-full w-full">
+              <div
+                class="absolute p-2 backdrop-blur-xs bottom-5 left-2 text-2xl font-semibold text-lighttext z-5 w-full text-center px-10"
+              >
+                Offer wide range of daily essentials
+              </div>
+              <div
+                class="absolute bg-darktext/50 top-0 left-0 h-full w-full"
+              ></div>
+              <img
+                src="./assets/gallary/6.webp"
+                alt="image"
+                height="200"
+                width="200"
+                class="h-full w-full"
+              />
+            </div>
+
+            <div class="relative h-full w-full rounded-lg overflow-hidden">
+              <div
+                class="absolute p-2 backdrop-blur-xs top-5 left-2 text-2xl font-semibold text-lighttext z-5 w-full text-center px-10"
+              >
+                Support community with trusted products
+              </div>
+              <div
+                class="absolute bg-darktext/50 top-0 left-0 h-full w-full"
+              ></div>
+              <img
+                src="./assets/gallary/8.webp"
+                alt="image"
+                height="100"
+                width="100"
+                class="h-full w-full"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- about -3  -->
+        <div
+          class="h-full w-full grid md:grid-cols-2 gap-5 bg-darkblue p-5 rounded-lg"
+        >
+          <div class="h-full w-full relative rounded-lg overflow-hidden">
+            <div class="absolute top-5 text-center left-5 z-20">
+              <h2
+                class="text-xl md:text-2xl xl:text-4xl font-bold uppercase text-lighttext"
+              >
+                Since<br />
+                1860
+              </h2>
+            </div>
+            <div
+              class="absolute bg-darktext/50 top-0 left-0 h-full w-full"
+            ></div>
+            <video
+              class="h-full w-full object-cover rounded-lg"
+              muted
+              loop
+              autoplay
+              preload="none"
+              height="100"
+              width="100"
+            >
+              <source src="./assets/banner2.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="h-full w-full">
+            <ul
+              class="h-full w-full flex flex-col justify-center gap-4 md:text-2xl text-white"
+            >
+              <h4 class="text-4xl font-bold">//WHO WE ARE//</h4>
+              <li>
+                ShreeVardhaman BestPrice – A Legacy Of The Vardhaman Bahubali
+                Family Since 1860
+              </li>
+              <li>
+                We serve families with a wide range of groceries, staples,
+                household items, personal care, and daily-use products.
+              </li>
+              <li>
+                Our focus is on fresh stock, transparent pricing, and customer
+                satisfaction. With a clean store environment and friendly
+                service, we make everyday shopping easy, comfortable, and
+                reliable.
+              </li>
+              <li>
+                <a
+                  href="/"
+                  class="flex items-center gap-2 btn-dark w-fit text-base"
+                  >Know More <i class="fa-solid fa-arrow-down -rotate-90"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- about -4  -->
+        <div class="h-full w-full grid md:grid-cols-2 gap-5 items-center">
+          <div class="flex flex-col gap-5">
+            <h4 class="text-4xl font-semibold uppercase">//leadership//</h4>
+
+            <ul class="md:text-2xl flex flex-col gap-2">
+              <li>
+                The Directors of Shree Vardhaman Best Price provide strong
+                leadership with a clear focus on quality, affordability, and
+                customer trust.
+              </li>
+              <li>
+                With hands-on involvement and deep understanding of retail
+                operations, they ensure that the supermarket consistently
+                delivers best-priced products, fresh stock, and reliable
+                service.
+              </li>
+            </ul>
+          </div>
+          <div
+            class="container grid grid-cols-1 md:grid-cols-2 gap-5 items-center py-5"
+          >
+            <div class="relative h-full container">
+              <img
+                src="./assets/directors/praveen.webp"
+                height="150"
+                alt="director"
+                class="object-contain grayscale rounded-lg w-full"
+              />
+              <span
+                class="absolute w-full z-10 text-lighttext font-semibold backdrop-blur-3xl bottom-2 p-3"
+                >Praveen Jain (Director)</span
+              >
+            </div>
+            <div class="relative h-full container">
+              <img
+                src="./assets/directors/parshav.webp"
+                height="150"
+                alt="director"
+                class="object-contain grayscale rounded-lg w-full"
+              />
+              <span
+                class="absolute w-full z-10 text-lighttext font-semibold backdrop-blur-3xl bottom-2 p-3"
+                >Parshav Jain (Director+ CEO)</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer  -->
+    <footer
+      class="bg-darkblue w-full py-20 px-2 xl:px-15 text-lighttex text-lighttext flex flex-col gap-10"
+    >
+      <div
+        class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10"
+      >
+        <div class="flex flex-col gap-3 md:gap-8">
+          <h5 class="text-lg font-semibold uppercase">Company</h5>
+          <ul class="flex flex-col gap-2">
+            <li>
+              <a href="/index.html">Home </a>
+            </li>
+            <li>
+              <a href="/about.html"> About </a>
+            </li>
+            <li>
+              <a href="/categories.html"> Categories </a>
+            </li>
+            <li>
+              <a href="/categories.html">Careers </a>
+            </li>
+            <li>
+              <a href="/contact.html">Contact </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-3 md:gap-8">
+          <h5 class="text-lg font-semibold uppercase">Social</h5>
+          <ul class="flex flex-col gap-2">
+            <li>
+              <a
+                href="https://www.facebook.com/shreevardhamanbestprice/"
+                target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/shreevardhamanbestprice?igsh=MWdvYTJhZTZ4anA5OQ%3D%3D"
+                target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/shreevardhaman-bestprice-pvt-ltd"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-3 md:gap-8">
+          <h5 class="text-lg font-semibold uppercase">Other Links</h5>
+          <ul class="flex flex-col gap-2">
+            <li>
+              <a href="./cookiepolicy.html">Cookie Policy</a>
+            </li>
+            <li>
+              <a href="./policies.html">Policies</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-3 md:gap-8">
+          <h5 class="text-lg font-semibold uppercase">Office Address</h5>
+          <ul class="flex flex-col gap-2">
+            <li>Sonasawri Naka, Suraj Ganj, Itarsi, Madhya Pradesh 461111</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="border border-lighttext/10" />
+
+      <p class="container text-center">
+        © ShreeVardhaman BestPrice Ltd. Pvt. 2025 | Designed & Developed by
+        <a
+          href="https://shreejitechsolutions.in/"
+          target="_blank"
+          class="font-semibold"
+          >Shreeji Tech Solutions</a
+        >
+        | All Rights Reserved.
+      </p>
+    </footer>
 
     <!-- script  -->
     <!-- font awesome   -->
@@ -141,5 +507,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
 
     <script src="/js/header.js"></script>
+    <script src="/js/marqueeCompanies.js"></script>
+    <script src="/js/about.js"></script>
   </body>
 </html>

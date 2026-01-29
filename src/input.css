@@ -17,13 +17,18 @@ body {
 @import "tailwindcss";
 
 @font-face {
-  font-family: manrope;
-  src: url("../fonts//Manrope-VariableFont_wght.ttf");
+  font-family: Lobster;
+  src: url("../fonts/LobsterTwo-Regular.ttf");
 }
 
 @font-face {
   font-family: poppins;
   src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Zodiak-;
+  src: url("../fonts/Zodiak-Variable.ttf");
 }
 
 @theme {
@@ -34,7 +39,6 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: poppins;
 }
 
 body {
@@ -42,6 +46,7 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
+  font-family: Zodiak;
 }
 
 a {
@@ -58,7 +63,7 @@ a:hover {
   height: 100%;
   background-color: var(--color-lighttext);
   color: var(--color-darktext);
-  padding: 0 48px;
+  padding: 0 24px;
   border-radius: 100px;
   font-weight: 600;
   cursor: pointer;
