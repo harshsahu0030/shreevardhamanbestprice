@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-  gsap.registerPlugin()
-  ;
   const btnOpen = document.querySelector(".nav-open");
   const btnClose = document.querySelector(".nav-close");
   const navbar = document.getElementById("website-navbar");
