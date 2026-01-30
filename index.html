@@ -220,7 +220,7 @@
         class="h-full w-full px-2 xl:px-15 py-20 flex flex-col gap-5"
       >
         <!-- about - 1  -->
-        <div class="w-full grid grid-cols-1 md:grid-cols-12 gap-5">
+        <div id="about-1" class="w-full grid grid-cols-1 md:grid-cols-12 gap-5">
           <div class="md:col-span-8">
             <h2 class="text-3xl lg:text-6xl font-bold uppercase">
               one stop shop for <br />
@@ -234,7 +234,10 @@
         </div>
 
         <!-- about -2  -->
-        <div class="h-full w-full grid grid-cols-1 md:grid-cols-12 gap-5">
+        <div
+          id="about-2"
+          class="h-full w-full grid grid-cols-1 md:grid-cols-12 gap-5"
+        >
           <div class="md:col-span-4 text-base lg:text-xl">
             <div class="h-full grid grid-cols-1 grid-rows-3 gap-5">
               <div
@@ -301,6 +304,7 @@
 
         <!-- about -3  -->
         <div
+          id="about-3"
           class="h-full w-full grid md:grid-cols-2 gap-5 bg-darkblue p-5 rounded-lg"
         >
           <div class="h-full w-full relative rounded-lg overflow-hidden">
@@ -356,7 +360,35 @@
           </div>
         </div>
 
-        <!-- about -4  -->
+        <!-- about-4  -->
+        <div class="w-full grid grid-cols-2 xl:grid-cols-4">
+          <div
+            class="flex flex-col items-center justify-center text-center gap-4 p-5"
+          >
+            <p class="text-5xl lg:text-7xl font-bold">99+</p>
+            <p class="text-lg lg:text-2xl">Years Of Establishment</p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center text-center gap-4 p-5"
+          >
+            <p class="text-5xl lg:text-7xl font-bold">9k+</p>
+            <p class="text-lg lg:text-2xl">Varieties Of Products</p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center text-center gap-4 p-5"
+          >
+            <p class="text-5xl lg:text-7xl font-bold">999k+</p>
+            <p class="text-lg lg:text-2xl">Happy Customers Served</p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center text-center gap-4 p-5"
+          >
+            <p class="text-5xl lg:text-7xl font-bold">99%</p>
+            <p class="text-lg lg:text-2xl">Products Assurance</p>
+          </div>
+        </div>
+
+        <!-- about -5  -->
         <div class="h-full w-full grid md:grid-cols-2 gap-5 items-center">
           <div class="flex flex-col gap-5">
             <h4 class="text-4xl font-semibold uppercase">//leadership//</h4>
@@ -403,6 +435,21 @@
               >
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- motive  -->
+      <section
+        id="motive"
+        aria-label="motive"
+        class="h-screen bg-darkblue text-lighttext w-full"
+      >
+        <div
+          class="h-full w-full flex items-center gap-20 text-[40vw] whitespace-nowrap font-bold"
+        >
+          <span>Roz Ki Bachat </span>
+          <i class="fa-solid fa-compass"></i>
+          <span>Roz Ka Bharosa</span>
         </div>
       </section>
     </main>
@@ -505,9 +552,12 @@
 
     <!-- gsap  -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
 
     <script src="/js/header.js"></script>
     <script src="/js/marqueeCompanies.js"></script>
     <script src="/js/about.js"></script>
+    <script src="/js/motive.js"></script>
   </body>
 </html>
