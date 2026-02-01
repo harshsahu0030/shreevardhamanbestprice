@@ -1,0 +1,285 @@
+<main class="min-h-screen w-full">
+      <!-- hero-banner  -->
+      <section
+        aria-label="hero-section"
+        id="hero-banner"
+        class="h-[90vh] relative w-full"
+      >
+        <video
+          class="h-full w-full object-cover rounded-lg"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+        >
+          <source src="./assets/banner.mp4" type="video/mp4" />
+        </video>
+        <div
+          class="absolute h-full w-full bg-darktext/50 top-0 left-0 z-10"
+        ></div>
+
+        <div class="absolute bottom-10 xl:left-15 left-2 z-20">
+          <h1
+            class="text-3xl md:text-6xl xl:text-8xl font-bold uppercase text-lighttext"
+          >
+            ShreeVardhaman<br class="hidden md:block" />
+            BestPrice
+          </h1>
+        </div>
+
+        <div class="absolute top-30 text-center xl:right-15 right-2 z-20">
+          <h2
+            class="text-xl md:text-2xl xl:text-4xl font-bold uppercase text-lighttext"
+          >
+            Since<br />
+            1860
+          </h2>
+        </div>
+      </section>
+
+      <!-- marque effect companies  -->
+      <section aria-label="companies" class="h-40 w-full overflow-hidden">
+        <div class="marquee-companies h-full w-full flex items-center"></div>
+      </section>
+
+      <!-- about us  -->
+      <section
+        aria-label="about-us"
+        class="h-full w-full px-2 xl:px-15 py-20 flex flex-col gap-5"
+      >
+        <!-- about - 1  -->
+        <div id="about-1" class="w-full grid grid-cols-1 md:grid-cols-12 gap-5">
+          <div class="md:col-span-8">
+            <h2 class="text-3xl lg:text-6xl font-bold uppercase">
+              one stop shop for <br />
+              every needs
+            </h2>
+          </div>
+          <div class="md:col-span-4 text-base lg:text-xl">
+            Our commitment to excellence ensures that every decision is guided
+            by trust, value, and long-term customer satisfaction.
+          </div>
+        </div>
+
+        <!-- about -2  -->
+        <div
+          id="about-2"
+          class="h-full w-full grid grid-cols-1 md:grid-cols-12 gap-5"
+        >
+          <div class="md:col-span-4 text-base lg:text-xl">
+            <div class="h-full grid grid-cols-1 grid-rows-3 gap-5">
+              <div
+                class="w-full p-4 bg-darkblue text-lighttext rounded-lg text-2xl font-semibold flex gap-2"
+              >
+                <span> 1.</span>
+                <span> Quality products at best prices </span>
+              </div>
+              <div
+                class="w-full p-4 bg-darkblue text-lighttext rounded-lg text-2xl font-semibold flex gap-2"
+              >
+                <span> 2.</span>
+                <span>Ensure reliable everyday shopping</span>
+              </div>
+              <div
+                class="w-full p-4 bg-darkblue text-lighttext rounded-lg text-2xl font-semibold flex gap-2"
+              >
+                <span> 3.</span>
+                <span> Build long-term customer trust </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="h-full md:col-span-8 grid gap-5 md:grid-cols-2 rounded-lg overflow-hidden"
+          >
+            <div class="relative h-full w-full">
+              <div
+                class="absolute p-2 backdrop-blur-xs bottom-5 left-2 text-2xl font-semibold text-lighttext z-5 w-full text-center px-10"
+              >
+                Offer wide range of daily essentials
+              </div>
+              <div
+                class="absolute bg-darktext/50 top-0 left-0 h-full w-full"
+              ></div>
+              <img
+                src="./assets/gallary/6.webp"
+                alt="image"
+                height="200"
+                width="200"
+                class="h-full w-full"
+              />
+            </div>
+
+            <div class="relative h-full w-full rounded-lg overflow-hidden">
+              <div
+                class="absolute p-2 backdrop-blur-xs top-5 left-2 text-2xl font-semibold text-lighttext z-5 w-full text-center px-10"
+              >
+                Support community with trusted products
+              </div>
+              <div
+                class="absolute bg-darktext/50 top-0 left-0 h-full w-full"
+              ></div>
+              <img
+                src="./assets/gallary/8.webp"
+                alt="image"
+                height="100"
+                width="100"
+                class="h-full w-full"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- about -3  -->
+        <div
+          id="about-3"
+          class="h-full w-full grid md:grid-cols-2 gap-5 bg-darkblue p-5 rounded-lg"
+        >
+          <div class="h-full w-full relative rounded-lg overflow-hidden">
+            <div class="absolute top-5 text-center left-5 z-20">
+              <h2
+                class="text-xl md:text-2xl xl:text-4xl font-bold uppercase text-lighttext"
+              >
+                Since<br />
+                1860
+              </h2>
+            </div>
+            <div
+              class="absolute bg-darktext/50 top-0 left-0 h-full w-full"
+            ></div>
+            <video
+              class="h-full w-full object-cover rounded-lg"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+            >
+              <source src="./assets/banner2.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="h-full w-full">
+            <ul
+              class="h-full w-full flex flex-col justify-center gap-4 md:text-2xl text-white"
+            >
+              <h4 class="text-4xl font-bold">//WHO WE ARE//</h4>
+              <li>
+                ShreeVardhaman BestPrice – A Legacy Of The Vardhaman Bahubali
+                Family Since 1860
+              </li>
+              <li>
+                We serve families with a wide range of groceries, staples,
+                household items, personal care, and daily-use products.
+              </li>
+              <li>
+                Our focus is on fresh stock, transparent pricing, and customer
+                satisfaction. With a clean store environment and friendly
+                service, we make everyday shopping easy, comfortable, and
+                reliable.
+              </li>
+              <li>
+                <a
+                  href="/"
+                  class="flex items-center gap-2 btn-dark w-fit text-base"
+                  >Know More <i class="fa-solid fa-arrow-down -rotate-90"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- about-4  -->
+        <div id="about-4" class="w-full grid grid-cols-2 xl:grid-cols-4">
+          <div
+            class="flex flex-col items-center justify-center text-center gap-4 p-5"
+          >
+            <p class="text-5xl lg:text-7xl font-bold">99+</p>
+            <p class="text-lg lg:text-2xl">Years Of Establishment</p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center text-center gap-4 p-5"
+          >
+            <p class="text-5xl lg:text-7xl font-bold">9k+</p>
+            <p class="text-lg lg:text-2xl">Varieties Of Products</p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center text-center gap-4 p-5"
+          >
+            <p class="text-5xl lg:text-7xl font-bold">999k+</p>
+            <p class="text-lg lg:text-2xl">Happy Customers Served</p>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center text-center gap-4 p-5"
+          >
+            <p class="text-5xl lg:text-7xl font-bold">99%</p>
+            <p class="text-lg lg:text-2xl">Products Assurance</p>
+          </div>
+        </div>
+
+        <!-- about -5  -->
+        <div
+          id="about-5"
+          class="h-full w-full grid md:grid-cols-2 gap-5 items-center"
+        >
+          <div class="flex flex-col gap-5">
+            <h4 class="text-4xl font-semibold uppercase">//leadership//</h4>
+
+            <ul class="md:text-2xl flex flex-col gap-2">
+              <li>
+                The Directors of Shree Vardhaman Best Price provide strong
+                leadership with a clear focus on quality, affordability, and
+                customer trust.
+              </li>
+              <li>
+                With hands-on involvement and deep understanding of retail
+                operations, they ensure that the supermarket consistently
+                delivers best-priced products, fresh stock, and reliable
+                service.
+              </li>
+            </ul>
+          </div>
+          <div
+            class="container grid grid-cols-1 md:grid-cols-2 gap-5 items-center py-5"
+          >
+            <div class="relative h-full container">
+              <img
+                src="./assets/directors/praveen.webp"
+                height="150"
+                alt="director"
+                class="object-contain grayscale rounded-lg w-full"
+              />
+              <span
+                class="absolute w-full z-10 text-lighttext font-semibold backdrop-blur-3xl bottom-2 p-3"
+                >Praveen Jain (Director)</span
+              >
+            </div>
+            <div class="relative h-full container">
+              <img
+                src="./assets/directors/parshav.webp"
+                height="150"
+                alt="director"
+                class="object-contain grayscale rounded-lg w-full"
+              />
+              <span
+                class="absolute w-full z-10 text-lighttext font-semibold backdrop-blur-3xl bottom-2 p-3"
+                >Parshav Jain (Director+ CEO)</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- motive  -->
+      <section
+        id="motive"
+        aria-label="motive"
+        class="h-screen bg-darkblue text-lighttext w-full"
+      >
+        <div
+          class="h-full w-full flex items-center gap-20 text-[30vw] whitespace-nowrap font-bold px-2 xl:px-15"
+        >
+          Rozana Ki Bachat
+        </div>
+      </section>
+    </main>
