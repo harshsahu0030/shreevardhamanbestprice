@@ -517,6 +517,12 @@
   .text-lighttext {
     color: var(--color-lighttext);
   }
+  .text-lighttext\/50 {
+    color: color-mix(in srgb, #ffffff 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-lighttext) 50%, transparent);
+    }
+  }
   .text-white {
     color: var(--color-white);
   }
