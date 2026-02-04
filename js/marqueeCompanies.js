@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   maqueeContainer.innerHTML += maqueeContainer.innerHTML;
 
   // duplicate content for seamless loop
-  const marqueeWidth = maqueeContainer.scrollWidth / 2;
+  const marqueeWidth = maqueeContainer.scrollWidth;
 
   const marqueeTween = gsap.to(maqueeContainer, {
     x: -marqueeWidth,

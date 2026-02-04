@@ -38,10 +38,7 @@
         </div>
       </section>
 
-      <!-- marque effect companies  -->
-      <section aria-label="companies" class="h-40 w-full overflow-hidden">
-        <div class="marquee-companies h-full w-full flex items-center"></div>
-      </section>
+  
 
       <!-- about us  -->
       <section
