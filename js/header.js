@@ -17,14 +17,10 @@ const headerLinks = [
   },
 ];
 
-document.addEventListener("DOMContentLoaded", (event) => {
-  const btnOpen = document.querySelector(".nav-open");
-  const btnClose = document.querySelector(".nav-close");
-  const navbar = document.getElementById("website-navbar");
-  const links = document.querySelector("#nav-links");
+const links = document.querySelector("#nav-links");
 
-  headerLinks.forEach((link) => {
-    links.innerHTML += `<li class="hover:scale-95 transition-all group w-fit uppercase">
+headerLinks.forEach((link) => {
+  links.innerHTML += `<li class="hover:scale-95 transition-all group w-fit uppercase">
               <a href="${link?.url}"
                 >${link?.label}
                 <span
@@ -32,7 +28,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
                   >-></span
                 ></a
               >`;
-  });
+});
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  const btnOpen = document.querySelector(".nav-open");
+  const btnClose = document.querySelector(".nav-close");
+  const navbar = document.getElementById("website-navbar");
 
   let navTimeline = gsap.timeline({
     paused: true,
