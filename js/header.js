@@ -1,35 +1,3 @@
-const headerLinks = [
-  {
-    label: "Home",
-    url: "/index.html",
-  },
-  {
-    label: "About Us",
-    url: "/",
-  },
-  {
-    label: "Categories",
-    url: "/",
-  },
-  {
-    label: "Contact",
-    url: "/",
-  },
-];
-
-const links = document.querySelector("#nav-links");
-
-headerLinks.forEach((link) => {
-  links.innerHTML += `<li class="hover:scale-95 transition-all group w-fit uppercase">
-              <a href="${link?.url}"
-                >${link?.label}
-                <span
-                  class="opacity-0 group-hover:opacity-100 transition hidden xl:inline-block"
-                  >-></span
-                ></a
-              >`;
-});
-
 document.addEventListener("DOMContentLoaded", (event) => {
   const btnOpen = document.querySelector(".nav-open");
   const btnClose = document.querySelector(".nav-close");
