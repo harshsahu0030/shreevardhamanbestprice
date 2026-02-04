@@ -217,6 +217,7 @@
 
       <!-- about us  -->
       <section
+        id="about"
         aria-label="about-us"
         class="h-full w-full px-2 xl:px-15 py-20 flex flex-col gap-5"
       >
@@ -242,19 +243,19 @@
           <div class="md:col-span-4 text-base lg:text-xl">
             <div class="h-full grid grid-cols-1 grid-rows-3 gap-5">
               <div
-                class="w-full p-4 bg-darkblue text-lighttext rounded-lg text-2xl font-semibold flex gap-2"
+                class="about-2-list w-full p-4 bg-darkblue text-lighttext rounded-lg text-2xl font-semibold flex gap-2"
               >
                 <span> 1.</span>
                 <span> Quality products at best prices </span>
               </div>
               <div
-                class="w-full p-4 bg-darkblue text-lighttext rounded-lg text-2xl font-semibold flex gap-2"
+                class="about-2-list w-full p-4 bg-darkblue text-lighttext rounded-lg text-2xl font-semibold flex gap-2"
               >
                 <span> 2.</span>
                 <span>Ensure reliable everyday shopping</span>
               </div>
               <div
-                class="w-full p-4 bg-darkblue text-lighttext rounded-lg text-2xl font-semibold flex gap-2"
+                class="about-2-list w-full p-4 bg-darkblue text-lighttext rounded-lg text-2xl font-semibold flex gap-2"
               >
                 <span> 3.</span>
                 <span> Build long-term customer trust </span>
@@ -365,25 +366,25 @@
         <!-- about-4  -->
         <div id="about-4" class="w-full grid grid-cols-2 xl:grid-cols-4">
           <div
-            class="flex flex-col items-center justify-center text-center gap-4 p-5"
+            class="about-4-counter flex flex-col items-center justify-center text-center gap-4 p-5"
           >
             <p class="text-5xl lg:text-7xl font-bold">99+</p>
             <p class="text-lg lg:text-2xl">Years Of Establishment</p>
           </div>
           <div
-            class="flex flex-col items-center justify-center text-center gap-4 p-5"
+            class="about-4-counter flex flex-col items-center justify-center text-center gap-4 p-5"
           >
             <p class="text-5xl lg:text-7xl font-bold">9k+</p>
             <p class="text-lg lg:text-2xl">Varieties Of Products</p>
           </div>
           <div
-            class="flex flex-col items-center justify-center text-center gap-4 p-5"
+            class="about-4-counter flex flex-col items-center justify-center text-center gap-4 p-5"
           >
             <p class="text-5xl lg:text-7xl font-bold">999k+</p>
             <p class="text-lg lg:text-2xl">Happy Customers Served</p>
           </div>
           <div
-            class="flex flex-col items-center justify-center text-center gap-4 p-5"
+            class="about-4-counter flex flex-col items-center justify-center text-center gap-4 p-5"
           >
             <p class="text-5xl lg:text-7xl font-bold">99%</p>
             <p class="text-lg lg:text-2xl">Products Assurance</p>
@@ -412,6 +413,7 @@
               </li>
             </ul>
           </div>
+
           <div
             class="container grid grid-cols-1 md:grid-cols-2 gap-5 items-center py-5"
           >
@@ -541,11 +543,14 @@
     ></script>
 
     <!-- gsap  -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
 
+    <!-- components  -->
     <script src="/js/header.js"></script>
     <script src="/js/marqueeCompanies.js"></script>
-    <!-- <script src="/js/about.js"></script> -->
+    <script src="/js/about.js"></script>
     <!-- <script src="/js/motive.js"></script>  -->
   </body>
 </html>
