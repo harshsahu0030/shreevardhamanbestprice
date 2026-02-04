@@ -10,7 +10,7 @@
   <body>
     <!-- header  -->
     <header
-      class="h-20 w-full flex items-center justify-between py-1 xl:px-15 px-2 text-lighttext fixed top-0 left-0 z-30 backdrop-blur-sm bg-darkblue"
+      class="h-20 w-full flex items-center justify-between py-1 xl:px-15 px-2 text-lighttext fixed top-0 left-0 z-30 backdrop-blur-sm"
     >
       <a href="/" class="hover:scale-95 transition-all">
         <img
@@ -51,6 +51,7 @@
             preload="none"
             height="100"
             width="100"
+            poster="./assets/logo-preload.webp"
           >
             <source
               src="./assets/banner3.mp4"
@@ -59,52 +60,16 @@
               width="100"
             />
           </video>
-          <div class="absolute h-full w-full bg-darktext/50 top-0 left-0"></div>
         </div>
 
         <div class="navbar-content w-full flex flex-col gap-10 justify-between">
-          <ul class="flex flex-col gap-5 text-5xl font-semibold">
-            <li class="hover:scale-95 transition-all group w-fit">
-              <a href="/"
-                >HOME
-                <span
-                  class="opacity-0 group-hover:opacity-100 transition hidden xl:inline-block"
-                  >-></span
-                ></a
-              >
-            </li>
-            <li class="hover:scale-95 transition-all group w-fit">
-              <a href="/"
-                >ABOUT US
-                <span
-                  class="opacity-0 group-hover:opacity-100 transition hidden xl:inline-block"
-                  >-></span
-                ></a
-              >
-            </li>
-            <li class="hover:scale-95 transition-all group w-fit">
-              <a href="/"
-                >CATEGORIES
-                <span
-                  class="opacity-0 group-hover:opacity-100 transition hidden xl:inline-block"
-                  >-></span
-                ></a
-              >
-            </li>
-            <li class="hover:scale-95 transition-all group w-fit">
-              <a href="/"
-                >CONTACT
-                <span
-                  class="opacity-0 group-hover:opacity-100 transition hidden xl:inline-block"
-                  >-></span
-                ></a
-              >
-            </li>
+          <ul id="nav-links" class="flex flex-col gap-5 text-5xl font-semibold">
+            <!-- link add through javascript (heafder.js)  -->
           </ul>
 
           <hr class="border border-gray-500" />
 
-          <ul class="flex items-center gap-4 text-3xl">
+          <ul id="nav-social" class="flex items-center gap-4 text-3xl">
             <li class="hover:scale-95 transition-all relative group">
               <a href="/" target="_blank">
                 <i class="fa-brands fa-square-facebook"></i>
@@ -169,7 +134,46 @@
     </nav>
 
     <!-- main  -->
-    <main class="h-screen w-full"></main>
+    <main class="min-h-screen w-full">
+      <!-- hero-banner  -->
+      <section
+        aria-label="hero-section"
+        id="hero-banner"
+        class="h-[90vh] relative w-full"
+      >
+        <video
+          class="h-full w-full object-cover rounded-lg"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+        >
+          <source src="./assets/banner.mp4" type="video/mp4" />
+        </video>
+        <div
+          class="absolute h-full w-full bg-darktext/50 top-0 left-0 z-10"
+        ></div>
+
+        <div class="absolute bottom-10 xl:left-15 left-2 z-20">
+          <h1
+            class="text-3xl md:text-6xl xl:text-8xl font-bold uppercase text-lighttext"
+          >
+            ShreeVardhaman<br class="hidden md:block" />
+            BestPrice
+          </h1>
+        </div>
+
+        <div class="absolute top-30 text-center xl:right-15 right-2 z-20">
+          <h2
+            class="text-xl md:text-2xl xl:text-4xl font-bold uppercase text-lighttext"
+          >
+            Since<br />
+            1860
+          </h2>
+        </div>
+      </section>
+    </main>
 
     <!-- footer  -->
     <footer
