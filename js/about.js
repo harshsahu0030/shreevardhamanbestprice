@@ -90,5 +90,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     opacity: 0,
     duration: 0.5,
     stagger: 0.5,
+    end: "top 80%",
   });
 });

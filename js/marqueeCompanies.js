@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   // duplicate for seamless loop
   maqueeContainer.innerHTML += maqueeContainer.innerHTML;
+  maqueeContainer.innerHTML += maqueeContainer.innerHTML;
 
   // duplicate content for seamless loop
   const marqueeWidth = maqueeContainer.scrollWidth / 2;
