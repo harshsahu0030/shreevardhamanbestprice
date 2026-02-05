@@ -469,9 +469,27 @@
 
         <hr class="border border-darktext/10" />
 
-        <div
-          class="company-categories grid grid-cols-1 md:grid-cols-2 gap-5"
-        ></div>
+        <div class="company-categories grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div
+            class="container h-50 bg-lighttext rounded-2xl overflow-hidden grid grid-cols-2"
+          >
+            <img
+              src="./assets/gallary/3.webp"
+              alt="image"
+              loading="lazy"
+              height="100"
+              width="100"
+              class="h-full w-full object-fill rounded-2xl"
+            />
+            <div class="h-full flex flex-col justify-between p-4">
+              <div class="flex flex-col gap-2">
+                <h5 class="text-xl font-semibold">${src.heading}</h5>
+                <p class="text-base font-medium">${src.desc}</p>
+              </div>
+            </div>
+          </div>
+          `;
+        </div>
       </section>
     </main>
 
